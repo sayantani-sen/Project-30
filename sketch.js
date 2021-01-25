@@ -100,20 +100,20 @@ function draw(){
     slingShot.display();
 
     mouseDragged();
-    mouseReleased();
-    keyPressed();
+//     mouseReleased();
+//     keyPressed();
 
     
 }
 function mouseDragged(){
 	Matter.Body.setPosition(polygon.body,{x:mouseX,y:mouseY});
 }
-function mouseReleased(){
-    slingShot.fly();
-}
-function keyPressed(){
-    if(keyCode === 32){
-        slingShot.attach(this.polygon);
-    }
-}
+// function mouseReleased(){
+//     slingShot.fly();
+// }
+// function keyPressed(){
+//     if(keyCode === 32){
+//         slingShot.attach(this.polygon);
+//     }
+// }
 
